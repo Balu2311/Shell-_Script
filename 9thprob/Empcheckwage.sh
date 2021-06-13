@@ -14,6 +14,10 @@ case $randomCheck in
 		read -p "enter the working days: " n
 		workhr=$(( $n * $empHr ))
 		echo $workhr
+		dailywage=$(( $empHr * 20 ))
+		echo $dailywage
+		total_wage=$(( $workhr * 20 ))
+		echo $total_wage
 		;;
 	$isPartTime)
 		echo "Employee is PartPTime"
@@ -24,6 +28,11 @@ case $randomCheck in
 		read -p "enter the working days: " n
                 workhr=$(( $n * $empHr ))
 		echo $workhr
+		dailywage=$(( $empHr * 20 ))
+                echo $dailywage
+                total_wage=$(( $workhr * 20 ))
+                echo $total_wage
+
 		;;
 	0)
         	echo "Employee is absent"
