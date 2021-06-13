@@ -6,14 +6,19 @@ empFullTime=8
 randomCheck=$((RANDOM%3))
 case $randomCheck in
 	$isFullTime)
-		echo "Employee is Present"
+		echo "Employee is FullTimePresent"
 		empHr=8
 		echo $empHr hr
+		monthwage=$(( (20 *$empHr) * 20 ))
+		echo $monthwage
 		;;
-	$isFPartTime)
-		echo "Employee is parttime"
+	$isPartTime)
+		echo "Employee is PartPTime"
 		empHr=4
 		echo $empHr hr
+   		monthwage=$(( (20 *$empHr) * 20 ))
+                echo $monthwage
+
 		;;
 	0)
         	echo "Employee is absent"
