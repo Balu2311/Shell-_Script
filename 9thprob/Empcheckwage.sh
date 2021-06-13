@@ -9,7 +9,7 @@ case $randomCheck in
 		echo "Employee is FullTimePresent"
 		empHr=8
 		echo $empHr hr
-		monthwage=$(( (20 *$empHr) * 20 ))
+		monthwage=$(( 100 * 20 ))
 		echo $monthwage
 		;;
 	$isPartTime)
