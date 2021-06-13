@@ -11,6 +11,9 @@ case $randomCheck in
 		echo $empHr hr
 		monthwage=$(( 100 * 20 ))
 		echo $monthwage
+		read -p "enter the working days: " n
+		workhr=$(( $n * $empHr ))
+		echo $workhr
 		;;
 	$isPartTime)
 		echo "Employee is PartPTime"
@@ -18,7 +21,9 @@ case $randomCheck in
 		echo $empHr hr
    		monthwage=$(( (20 *$empHr) * 20 ))
                 echo $monthwage
-
+		read -p "enter the working days: " n
+                workhr=$(( $n * $empHr ))
+		echo $workhr
 		;;
 	0)
         	echo "Employee is absent"
