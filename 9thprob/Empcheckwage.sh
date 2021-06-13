@@ -1,7 +1,9 @@
 #!/bin/bash -x
-isPresent=1
+isFullTime=1
+empRateperHr=20
+empFullTime=8
 randomCheck=$((RANDOM%2))
-if [ $isPresent -eq $randomCheck ]
+if [ $isFullTime -eq $randomCheck ]
 then
         echo "Employee is Present"
 else
